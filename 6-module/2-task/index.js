@@ -1,4 +1,4 @@
-import createElement from '/assets/lib/create-element.js';
+import createElement from '../../assets/lib/create-element.js';
 
 export default class ProductCard {
   constructor(product, elem = '') {
@@ -21,10 +21,10 @@ export default class ProductCard {
     </div>
     `);
 
-    let btnsAdd = document.querySelectorAll('.card__button');
-    for (let i = 0; i < btnsAdd.length; i++) {
-        btnsAdd[i].addEventListener('click', (event) => {this.productAdd(event); });
-      };
+    let btnsAdd = newElem.querySelector('.card__button');
+    // for (let i = 0; i < btnsAdd.length; i++) {
+      btnsAdd.addEventListener('click', (event) => {this.productAdd(event); });
+    // };
 
     return newElem;
   }
