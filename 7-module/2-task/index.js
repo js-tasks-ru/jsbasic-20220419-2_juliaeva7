@@ -43,9 +43,7 @@ export default class Modal {
     modal__header.append(modal__close);
  
     const modal__title = createElement(`
-        <h3 class="modal__title">
-          ${this.title}
-        </h3>
+        <h3 class="modal__title">${this.title}</h3>
       </div>`);
     modal__header.append(modal__title);
 
